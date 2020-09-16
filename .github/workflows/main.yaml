@@ -57,7 +57,5 @@ jobs:
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: ${{ steps.render-db-container.outputs.task-definition }}
-          service: apache-git
           cluster: default-cluster
-          wait-for-service-stability: true
 
