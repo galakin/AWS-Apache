@@ -1,0 +1,17 @@
+{
+   "requiresCompatibilities": ["EC2"], 
+   "containerDefinitions":[
+        {
+            "name": "nginx-text",
+            "image": "nginx:latest",
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 3000,
+                    "protocol": "tcp"
+                    
+                }
+            ]
+        }
+    ]
+}
