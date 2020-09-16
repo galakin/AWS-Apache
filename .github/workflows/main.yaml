@@ -51,7 +51,7 @@ jobs:
         with:
           task-definition: task-definition.json
           container-name: apache  
-          image: ${ECR_REGISTRY}/${ECR_REPOSITORY}:${IMAGE_TAG}
+          image: 370599928061.dkr.ecr.us-east-2.amazonaws.com/apache-git:test
      
       - name: Deploy Amazon ECS task definition
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
