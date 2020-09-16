@@ -57,6 +57,6 @@ jobs:
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: ${{ steps.render-db-container.outputs.task-definition }}
-          service: apache-git
           cluster: default-cluster
-
+          image: 370599928061.dkr.ecr.us-east-2.amazonaws.com/apache-git:test
+ 
