@@ -1,0 +1,18 @@
+{
+  "family": "apache-git",
+  "containerDefinitions": [    
+      {
+        "cpu": 64,
+        "image": "370599928061.dkr.ecr.us-east-2.amazonaws.com/apache-git:test",
+        "memory": 400,
+        "essential": true,
+        "name": "apache-git"
+      }
+  ],
+  "requiresCompatibilities": [
+    "EC2"
+  ],
+  "networkMode": "awsvpc",
+  "cpu": "1024",
+  "memory": "2048"
+}
