@@ -30,7 +30,7 @@ jobs:
           ECR_REPOSITORY: apache-git
           IMAGE_TAG: test
         run: | 
-          docker build -t gitaction-test -f Dockerfile-sql .
+          docker build -t ${ECR_REPOSITORY}  .
           docker tag ${ECR_REPOSITORY} 370599928061.dkr.ecr.us-east-2.amazonaws.com/${ECR_REPOSITORY}:${IMAGE_TAG}
           docker push 370599928061.dkr.ecr.us-east-2.amazonaws.com/${ECR_REPOSITORY}:${IMAGE_TAG}
           echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
