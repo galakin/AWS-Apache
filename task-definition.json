@@ -16,13 +16,9 @@
         "name": "apache"
       }
   ],
-  "compatibilities": [
-    "EC2"
-  ],
   "requiresCompatibilities": [
     "EC2"
   ],
-  "status": "ACTIVE",
   "networkMode": "bridge",
   "cpu": "1024",
   "memory": "2048"
