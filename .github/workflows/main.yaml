@@ -58,4 +58,6 @@ jobs:
         with:
           task-definition: ${{ steps.render-db-container.outputs.task-definition }}
           cluster: default-cluster
-          service: apache-git 
+          service: apache-git
+          wait-for-service-stability: true
+ 
