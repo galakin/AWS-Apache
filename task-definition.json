@@ -1,6 +1,7 @@
 {
   "family": "apache-git",
   "containerDefinitions": [    
+    {
     "portMappings": [
       {
         "hostPort": 80,
@@ -8,7 +9,6 @@
         "containerPort": 80
       }
     ],
-    {
         "cpu": 64,
         "image": "370599928061.dkr.ecr.us-east-2.amazonaws.com/apache-git:test",
         "memory": 400,
