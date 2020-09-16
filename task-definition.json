@@ -9,7 +9,7 @@
         "containerPort": 80
       }
     ],
-        "cpu": 64,
+        "cpu": 128,
         "image": "370599928061.dkr.ecr.us-east-2.amazonaws.com/apache-git:test",
         "memory": 400,
         "essential": true,
